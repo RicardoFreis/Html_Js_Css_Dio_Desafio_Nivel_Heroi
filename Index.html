@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Herói - Ricardo Furtado Reis</title>
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/styleResponsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="box-1">Desafio Classificador de nível de herói</div>
+
+      <div id="box-2">
+        <p>Nome do herói:</p>
+        <input id="Nome" type="text" />
+        <p>Qtde Xps:</p>
+        <input id="Qtde" type="number" min="1" max="100000" />
+        <button onclick="Calcular()">Avaliar nível do herói</button>
+      </div>
+
+      <div id="box-3">
+        <table>
+          <tr>
+            <th>Parâmetros</th>
+            <th>Valores</th>
+          </tr>
+          <tr>
+            <td>Menor ou igual a 1.000</td>
+            <td id="Ferro" class="SombraTexto">Ferro</td>
+          </tr>
+          <tr>
+            <td>Entre 1.001 e 2.000</td>
+            <td id="Bronze" class="SombraTexto">Bronze</td>
+          </tr>
+          <tr>
+            <td>Entre 2.001 e 5.000</td>
+            <td id="Prata" class="SombraTexto">Prata</td>
+          </tr>
+          <tr>
+            <td>Entre 5.001 e 7.000</td>
+            <td id="Ouro" class="SombraTexto">Ouro</td>
+          </tr>
+          <tr>
+            <td>Entre 7.001 e 8.000</td>
+            <td id="Platina" class="SombraTexto">Platina</td>
+          </tr>
+          <tr>
+            <td>Entre 8.001 e 9.000</td>
+            <td id="Ascendente" class="SombraTexto">Ascendente</td>
+          </tr>
+          <tr>
+            <td>Entre 9.001 e 10.000</td>
+            <td id="Imortal" class="SombraTexto">Imortal</td>
+          </tr>
+          <tr>
+            <td>Maior ou igual a 10.001</td>
+            <td id="Radiante" class="SombraTexto">Radiante</td>
+          </tr>
+        </table>
+      </div>
+      <div id="box-4">
+        O Herói de nome **
+        <span id="ResNome"></span> ** está no nível de **
+        <span id="ResNivel"></span> **
+      </div>
+    </div>
+    <script src="./Js/Js.js"></script>
+  </body>
+</html>

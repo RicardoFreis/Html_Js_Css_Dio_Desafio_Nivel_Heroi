@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+
+    grid-template-areas:
+        ". b1 b1 ."
+        ". b2 b3 ."
+        ". b4 b4 .";
+}
+
+.container>div {
+    border: 1px solid whitesmoke;
+    background-color: rgb(240, 239, 239);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+}
+
+#box-1 {
+    grid-area: b1;
+    align-self: center;
+    justify-self: stretch;
+    text-align: center;
+}
+
+#box-2 {
+    grid-area: b2;
+}
+
+#box-3 {
+    grid-area: b3;
+}
+
+#box-4 {
+    display: none;
+    grid-area: b4;
+    align-self: center;
+    justify-self: stretch;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid rgb(192, 191, 191);
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+tr th {
+    height: 40px;
+}
+
+tr td {
+    background-color: rgba(252, 253, 252, 0.973);
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input {
+    margin-top: 6px;
+    padding: 5px;
+    border: 1px solid rgb(207, 203, 203);
+    font-size: 12pt;
+}
+
+input#Nome {
+    width: 100%;
+}
+
+input#Qtde {
+    width: 100px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px;
+    width: auto;
+    height: 30px;
+    background-color: rgb(251, 251, 252);
+    border-radius: 0px 5px;
+    border: none;
+    box-shadow: 1px 1px 2px;
+    font-size: 12pt;
+}
+
+.SombraTexto {
+    text-shadow: 1px 1px 1px black;
+}
+
+#Ferro {
+    color: #8a8a7d;
+    font-weight: bold;
+}
+
+#Bronze {
+    color: #cd7f32;
+
+    font-weight: bold;
+}
+
+#Prata {
+    color: #c0c0c0;
+    font-weight: bold;
+}
+
+#Ouro {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+#Platina {
+    color: #a0b2c6;
+    font-weight: bold;
+}
+
+#Ascendente {
+    color: #008000;
+    font-weight: bold;
+}
+
+#Imortal {
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+#Radiante {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+p {
+    padding-top: 20px;
+}
